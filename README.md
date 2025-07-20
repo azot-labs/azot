@@ -17,7 +17,7 @@ Azot (formerly known as Streamyx) makes it simple, fast and delightful to downlo
 
 English • [Pусский](https://github.com/azot-labs/azot/tree/main/README.ru.md)
 
-You can create your own extension. Examples are available at [azot-labs/extensions](https://github.com/azot-labs/extensions).
+You can create your own extension. Examples are available at [azot-labs/extensions](https://github.com/azot-labs/extensions) and [here](https://github.com/azot-labs/extensions/blob/main/extensions.json) you can find a list of public extensions available for installation.
 
 ## Install
 
@@ -55,19 +55,29 @@ azot <command> [...options]
 
 Use `--help` flag to see all available options.
 
+### Install an extension
+
+> In the example below, RUTUBE extension is used to download videos from RUTUBE.
+
+```shell
+azot install rutube
+```
+
 ### Download a video
 
 ```shell
-azot https://vk.com/video-29093629_456239905
-22:40:05.153 INFO : Fetching content metadata...
-22:40:06.168 INFO : Fetching metadata finished
-22:40:06.169 INFO : Cocteau Twins - Heaven Or Las Vegas (Official Video) THE SWEET VINYL
-17:40:06.330 INFO : ✔ Cocteau.Twins.-.Heaven.Or.Las.Vegas.(Official.Video).THE.SWEET.VINYL.720p.VK.WEB-DL.x264 ∙ VIDEO ∙ 1280x720 ∙ 2296 KiB/s ∙ ~66 MiB
-17:40:11.799 INFO : ✔ Cocteau.Twins.-.Heaven.Or.Las.Vegas.(Official.Video).THE.SWEET.VINYL.720p.VK.WEB-DL.x264 ∙ AUDIO ∙ 267 KiB/s ∙ ~8 MiB
-17:40:13.007 INFO : ✔ Muxed
+azot https://rutube.ru/video/961e6b75ea096a57dde2f957ba1cc48c/
+20:32:40.667 INFO : Fetching content metadata...
+20:32:40.926 INFO : Fetching metadata finished
+20:32:40.928 INFO : The Best and Worst Web Browsers Ever—Which One Do You Use?
+20:32:41.094 INFO : Content Matched: HTTP Live Streaming
+20:32:41.094 INFO : Parsing streams...
+20:32:41.348 INFO : Extracted, there are 16 streams, 16 video streams
+✔ :32:41.354 INFO : The.Best.and.Worst.Web.Browsers.Ever—Which.One.Do.You.Use.2160p.WEB-DL.x264 ∙ VIDEO ∙ 3171 KiB/s
+✔ :32:55.731 INFO : Muxed
 ```
 
-Output: `C:\Users\Admin\Downloads\Cocteau.Twins.-.Heaven.Or.Las.Vegas.(Official.Video).THE.SWEET.VINYL.720p.VK.WEB-DL.x264.mkv`
+Output: `C:\Users\Admin\Downloads\The.Best.and.Worst.Web.Browsers.Ever—Which.One.Do.You.Use.2160p.WEB-DL.x264.mkv`
 
 ## Features
 

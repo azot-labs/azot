@@ -17,7 +17,7 @@
 
 [English](https://github.com/azot-labs/azot/main/README.md) • Pусский
 
-Вы можете создать собственное расширение. Примеры доступны в [azot-labs/extensions](https://github.com/azot-labs/extensions).
+Вы можете создать собственное расширение. Примеры доступны в [azot-labs/extensions](https://github.com/azot-labs/extensions) и там же можно найти [список публичных расширений](https://github.com/azot-labs/extensions/blob/main/extensions.json), доступных для установки.
 
 ## Установка
 
@@ -55,17 +55,29 @@ azot <command> [...options]
 
 Используйте вызов с аргументом `-h`, чтобы получить справку по всем доступным опциям.
 
+### Установка расширения
+
+> В примере ниже используется расширение для скачивания видео с RUTUBE.
+
+```shell
+azot install rutube
+```
+
 ### Скачивание видео
 
 ```shell
-azot https://vk.com/video-21665793_456241344
-22:42:00.012 INFO : Fetching metadata...
-22:42:00.655 INFO : Fetching metadata finished
-22:42:00.656 INFO : Смешарики. День учителя Смешарики
-17:42:00.696 INFO : ✔ Смешарики.День.учителя.Смешарики.VK.WEB-DL.x264 ∙ VIDEO
+azot https://rutube.ru/video/961e6b75ea096a57dde2f957ba1cc48c/
+20:32:40.667 INFO : Fetching content metadata...
+20:32:40.926 INFO : Fetching metadata finished
+20:32:40.928 INFO : The Best and Worst Web Browsers Ever—Which One Do You Use?
+20:32:41.094 INFO : Content Matched: HTTP Live Streaming
+20:32:41.094 INFO : Parsing streams...
+20:32:41.348 INFO : Extracted, there are 16 streams, 16 video streams
+✔ :32:41.354 INFO : The.Best.and.Worst.Web.Browsers.Ever—Which.One.Do.You.Use.2160p.WEB-DL.x264 ∙ VIDEO ∙ 3171 KiB/s
+✔ :32:55.731 INFO : Muxed
 ```
 
-Результат: `C:\Users\Admin\Downloads\Смешарики.День.учителя.Смешарики.VK.WEB-DL.x264/Смешарики.День.учителя.Смешарики.VK.WEB-DL.x264.mp4`
+Результат: `C:\Users\Admin\Downloads\The.Best.and.Worst.Web.Browsers.Ever—Which.One.Do.You.Use.2160p.WEB-DL.x264.mkv`
 
 ## Особенности
 
