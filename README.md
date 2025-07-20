@@ -23,7 +23,7 @@ You can create your own extension. Examples are available at [azot-labs/extensio
 
 Azot supports Windows (x64), macOS (x64 & Apple Silicon) and Linux (x64).
 
-> Install scripts below are for CLI v4.x.x. Starting from v5.x.x CLI is included in the desktop app and can be installed from settings.
+> Install scripts and examples below are for CLI v4.x.x. Starting from v5.x.x CLI is included in the desktop app and can be installed from settings as command `azot`.
 
 #### Windows
 
@@ -37,36 +37,34 @@ powershell -c "irm azot.so/install.ps1 | iex"
 curl -fsSL https://azot.so/install.sh | bash
 ```
 
-### Upgrade
+## Getting Started
+
+> Use `streamyx` command if you have v4.x.x or older version installed. For v5.x.x use `azot` command.
+
+```shell
+streamyx <command> [...options]
+```
+
+Use `--help` flag to see all available options.
 
 To upgrade to the latest version of Azot, run:
 
 ```shell
-azot upgrade
+streamyx upgrade
 ```
-
-## Getting Started
-
-> Use `streamyx` command if you have v4.x.x or older version installed.
-
-```shell
-azot <command> [...options]
-```
-
-Use `--help` flag to see all available options.
 
 ### Install an extension
 
 > In the example below, RUTUBE extension is used to download videos from RUTUBE.
 
 ```shell
-azot install rutube
+streamyx install rutube
 ```
 
 ### Download a video
 
 ```shell
-azot https://rutube.ru/video/961e6b75ea096a57dde2f957ba1cc48c/
+streamyx https://rutube.ru/video/961e6b75ea096a57dde2f957ba1cc48c/
 20:32:40.667 INFO : Fetching content metadata...
 20:32:40.926 INFO : Fetching metadata finished
 20:32:40.928 INFO : The Best and Worst Web Browsers Ever—Which One Do You Use?

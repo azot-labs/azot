@@ -23,7 +23,7 @@
 
 Азот поддерживает Windows (x64), macOS (x64 & Apple Silicon) и Linux (x64).
 
-> Приведенные ниже скрипты установки предназначены для CLI v4.x.x. Начиная с v5.x.x консольная утилита находится в составе десктопного приложения и может быть установлена из настроек.
+> Приведенные ниже скрипты установки и примеры команд предназначены для CLI v4.x.x. Начиная с v5.x.x консольная утилита находится в составе настольного приложения и может быть установлена из настроек в виде команды `azot`.
 
 #### Windows
 
@@ -37,36 +37,34 @@ powershell -c "irm azot.so/install.ps1 | iex"
 curl -fsSL https://azot.so/install.sh | bash
 ```
 
-### Обновление
+## Запуск
+
+> Используйте команду `streamyx` если у вас установлена версия v4.x.x или более старая. Для версии v5.x.x используйте команду `azot`.
+
+```shell
+streamyx <command> [...options]
+```
+
+Используйте вызов с аргументом `-h`, чтобы получить справку по всем доступным опциям.
 
 Чтобы обновить Азот до последней версии, выполните следующую команду:
 
 ```shell
-azot upgrade
+streamyx upgrade
 ```
-
-## Запуск
-
-> Используйте команду `streamyx` если у вас установлена версия v4.x.x или более старая.
-
-```shell
-azot <command> [...options]
-```
-
-Используйте вызов с аргументом `-h`, чтобы получить справку по всем доступным опциям.
 
 ### Установка расширения
 
 > В примере ниже используется расширение для скачивания видео с RUTUBE.
 
 ```shell
-azot install rutube
+streamyx install rutube
 ```
 
 ### Скачивание видео
 
 ```shell
-azot https://rutube.ru/video/961e6b75ea096a57dde2f957ba1cc48c/
+streamyx https://rutube.ru/video/961e6b75ea096a57dde2f957ba1cc48c/
 20:32:40.667 INFO : Fetching content metadata...
 20:32:40.926 INFO : Fetching metadata finished
 20:32:40.928 INFO : The Best and Worst Web Browsers Ever—Which One Do You Use?
