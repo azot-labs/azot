@@ -62,7 +62,7 @@ jobs:
           APPLE_APP_SPECIFIC_PASSWORD: ${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}
           APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
           NODE_ENV: production
-        run: npm run publish
+        run: npm run publish:desktop
 
       - name: Clean up keychain
         if: matrix.os == 'macos-latest'
