@@ -4,5 +4,7 @@
   "github:Perfect03/azot-extension-qfilm",
   "github:Perfect03/azot-extension-almatv",
   "github:Perfect03/azot-extension-fmedia",
-  "github:torislav/streamyx-flex"
+  "github:torislav/streamyx-flex",
+  "github:azot-labs/extension-crunchyroll",
+  "github:azot-labs/extension-kinescope"
 ]
