@@ -1,3 +1,6 @@
+/docs/.vitepress/dist
+/docs/.vitepress/cache
+
 /files
 device_client_id_blob
 device_private_key
