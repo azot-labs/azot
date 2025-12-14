@@ -31,7 +31,7 @@ jobs:
 
       # https://github.com/nodejs/node-gyp/issues/2869
       # https://github.com/actions/runner-images/issues/8615#issuecomment-1773563573
-      - if: matrix.os == 'macos-latest' || matrix.os == 'macos-13'
+      - if: matrix.os == 'macos-latest' || matrix.os == 'macos-15'
         run: python3 -m pip install setuptools --break-system-packages
 
       - run: npm install
@@ -51,7 +51,7 @@ jobs:
         run: npm run build:win
       - if: matrix.os == 'macos-latest'
         run: npm run build:mac:arm
-      - if: matrix.os == 'macos-13'
+      - if: matrix.os == 'macos-15'
         run: npm run build:mac
       - if: matrix.os == 'ubuntu-latest'
         run: npm run build:linux
@@ -62,7 +62,7 @@ jobs:
         run: powershell Compress-Archive build\win\streamyx.exe streamyx-x64-win.zip
       - if: ${{ matrix.os == 'macos-latest' }}
         run: zip -9 -j ${{ env.APP_NAME }}-arm64-mac.zip ./build/mac-arm/${{ env.APP_NAME }}
-      - if: ${{ matrix.os == 'macos-13' }}
+      - if: ${{ matrix.os == 'macos-15' }}
         run: zip -9 -j ${{ env.APP_NAME }}-x64-mac.zip ./build/mac/${{ env.APP_NAME }}
       - if: ${{ matrix.os == 'ubuntu-latest' }}
         run: zip -9 -j ${{ env.APP_NAME }}-x64-linux.zip ./build/linux/${{ env.APP_NAME }}
@@ -78,7 +78,7 @@ jobs:
           name: mac-arm64
           path: ./apps/cli/${{ env.APP_NAME }}-arm64-mac.zip
       - uses: actions/upload-artifact@v4
-        if: ${{ matrix.os == 'macos-13' }}
+        if: ${{ matrix.os == 'macos-15' }}
         with:
           name: mac-x64
           path: ./apps/cli/${{ env.APP_NAME }}-x64-mac.zip
