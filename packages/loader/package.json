@@ -40,10 +40,10 @@
     }
   ],
   "engines": {
-    "node": "20 || 21 || 22 || 23"
+    "node": ">=22"
   },
   "dependencies": {
-    "metavm": "^1.4.2"
+    "metavm": "^1.4.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",

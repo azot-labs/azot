@@ -39,7 +39,7 @@
     }
   ],
   "engines": {
-    "node": "20 || 21 || 22 || 23"
+    "node": ">=22"
   },
   "dependencies": {
     "puppeteer-core": "^23.9.0",
