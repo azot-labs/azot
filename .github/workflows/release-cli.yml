@@ -25,8 +25,8 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'npm'
+          node-version: 22
+          cache: "npm"
       - run: git config --global url."https://${{ secrets.CONTROL_REPO_TOKEN }}@github.com/".insteadOf ssh://git@github.com/
 
       # https://github.com/nodejs/node-gyp/issues/2869
@@ -100,8 +100,8 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'npm'
+          node-version: 22
+          cache: "npm"
 
       - uses: actions/download-artifact@v4
         with:
@@ -124,10 +124,10 @@ jobs:
       - name: Create release
         uses: ncipollo/release-action@2c591bcc8ecdcd2db72b97d6147f871fcd833ba5 # v1.14.0
         with:
-          artifacts: '${{ env.APP_NAME }}-x64-win.zip,
+          artifacts: "${{ env.APP_NAME }}-x64-win.zip,
             ${{ env.APP_NAME }}-arm64-mac.zip,
             ${{ env.APP_NAME }}-x64-mac.zip,
-            ${{ env.APP_NAME }}-x64-linux.zip'
+            ${{ env.APP_NAME }}-x64-linux.zip"
           tag: cli-v${{ env.APP_VERSION }}
           name: CLI v${{ env.APP_VERSION }}
           token: ${{ secrets.GITHUB_TOKEN }}
