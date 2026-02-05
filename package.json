@@ -19,7 +19,6 @@
     "packages/browser",
     "packages/core",
     "packages/dasha",
-    "packages/extensions/extensions/*",
     "packages/loader",
     "packages/molnia",
     "apps/cli"
