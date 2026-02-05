@@ -18,15 +18,14 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           token: ${{ secrets.CONTROL_REPO_TOKEN }}
           submodules: recursive
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: 22
-          cache: "npm"
       - run: git config --global url."https://${{ secrets.CONTROL_REPO_TOKEN }}@github.com/".insteadOf ssh://git@github.com/
 
       # https://github.com/nodejs/node-gyp/issues/2869
