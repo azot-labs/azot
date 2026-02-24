@@ -2,7 +2,7 @@
 
 This repo is used for hosting public releases of Azot.
 
-Azot is not open source software and this repo _DOES NOT_ contain the source code of Azot. However, if you wish to contribute to Azot, you can easily do so with our extensive extension system. A extension guide can be found here: [docs.azot.so](https://docs.azot.so)
+Azot is not open source software and this repo _DOES NOT_ contain the source code of Azot. However, if you wish to contribute to Azot, you can easily do so with our extensive extension system. A extension guide can be found here: [azot.mov/docs](https://azot.mov/docs)
 
 If you have questions or issues with extensions, please go to their own repo to file them. If you have questions or issues about core Azot itself, please post them to issues of this repo.
 
