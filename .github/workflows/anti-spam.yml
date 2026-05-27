@@ -1,0 +1,22 @@
+name: Anti-spam
+
+on:
+  issues:
+    types: [opened, edited, reopened]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  anti-spam:
+    if: ${{ !github.event.issue.pull_request }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Delete issue containing prohibited words
+        env:
+          BLACKLIST: ${{ secrets.BLACKLIST }}
+          GH_TOKEN: ${{ secrets.ISSUE_DELETION_TOKEN || github.token }}
+        run: node scripts/anti-spam.js
