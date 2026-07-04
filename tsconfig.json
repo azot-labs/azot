@@ -13,12 +13,10 @@
     "resolveJsonModule": true,
     "types": ["node"],
     "paths": {
-      "@streamyx/core": ["./packages/core/lib/main"],
-      "@streamyx/crunchyroll": ["./packages/crunchyroll/crunchyroll"],
       "dasha": ["./packages/dasha"],
       "molnia": ["./packages/molnia"]
     }
   },
-  "include": ["packages/core/src/**/*.ts"],
+  "include": ["apps/cli/streamyx.ts", "apps/cli/src/**/*.ts"],
   "exclude": []
 }
