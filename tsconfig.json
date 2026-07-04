@@ -11,11 +11,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "types": ["node"],
-    "paths": {
-      "dasha": ["./packages/dasha"],
-      "molnia": ["./packages/molnia"]
-    }
+    "types": ["node"]
   },
   "include": ["apps/cli/streamyx.ts", "apps/cli/src/**/*.ts"],
   "exclude": []

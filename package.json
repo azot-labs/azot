@@ -15,8 +15,6 @@
   "homepage": "https://streamyx.ru",
   "scripts": {},
   "workspaces": [
-    "packages/dasha",
-    "packages/molnia",
     "apps/cli"
   ],
   "devDependencies": {
