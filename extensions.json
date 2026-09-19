@@ -1,19 +1,19 @@
 [
-  "github:noreturrn/tvoe.live",
-  "github:Perfect03/azot-extension-premier",
-  "github:Perfect03/azot-extension-unicoplay",
   "gitlab:Perfect_03/azot-extension-domashniy",
   "gitlab:Perfect_03/azot-extension-fmedia",
   "gitlab:Perfect_03/azot-extension-birgetv",
   "gitlab:Perfect_03/azot-extension-almatv",
   "gitlab:Perfect_03/azot-extension-qfilm",
-  "github:torislav/streamyx-flex",
-  "github:azot-labs/extension-crunchyroll",
-  "github:azot-labs/extension-kinescope",
+  "github:Perfect03/azot-extension-premier",
+  "github:Perfect03/azot-extension-unicoplay",
   "github:Perfect03/azot-extension-smotreshka",
   "github:Perfect03/azot-extension-otv.kg",
   "github:Perfect03/azot-extension-mobikino",
   "github:Perfect03/azot-extension-galamtv",
   "github:Perfect03/azot-extension-qino",
-  "github:Perfect03/azot-extension-kazakhtelecom"
+  "github:Perfect03/azot-extension-kazakhtelecom",
+  "github:noreturrn/tvoe.live",
+  "github:torislav/streamyx-flex",
+  "github:azot-labs/extension-crunchyroll",
+  "github:azot-labs/extension-kinescope"
 ]
